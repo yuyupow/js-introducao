@@ -1,0 +1,176 @@
+*{
+	box-sizing: border-box;
+ }
+
+body{
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    /*determina a tipografia das letras*/
+	font-size: 14px;
+    /*tamanho da fonte*/
+}
+
+header{
+	background-color: #333;
+    /*cor de fundo do header*/
+	height: 3em;
+    /*tamanho do header*/
+	color: #FFF;
+    /*cor do header*/
+	margin-bottom: 1em;
+    /*margem da parte inferior do header*/
+}
+
+header h1{
+	font-size: 2em;
+	display:inline-block;
+	vertical-align:	middle;
+    /*textos dos header que estão categorizados como H1*/
+}
+header h2{
+	font-size: 2em;
+	display:inline-block;
+	vertical-align:	middle;
+     /*textos dos header que estão categorizados como H2*/
+}
+
+header .container:before{ /*before?*/
+	content: '';
+	display:inline-block;
+	height: 100%;
+	vertical-align:	middle;
+}
+
+.container{
+	width: 60%;
+	height: 100%;
+	margin: 0 auto;
+} /*determina as características dos objetos da classe CONTAINER*/
+
+section{
+	margin: 2em 0;
+	overflow: hidden; /*overflow?*/
+}
+
+section h2{
+	font-size: 3em;
+	display: block;
+	padding-bottom: .5em;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: .5em;
+} /*adiciona as características do h2 em SECTION*/
+
+table{
+	width: 100%;
+	margin-bottom : .5em;
+    table-layout: fixed;
+} /*características da tabela*/
+
+td, th /*th:table header td:*/{
+	padding: .7em;
+	margin: 0;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+
+th{
+	font-weight: bold;
+	background-color: #EEE;
+} /*adiciona as características do cabeçalho*/
+
+label{
+	color: #555;
+	display: block;
+	margin-bottom: .2em;
+}
+
+.campo{
+	margin: 0;
+	padding-bottom: 1em;
+	width: 100%;
+	border: 1px solid #ccc;
+	padding: .7em;
+	width: 100%;
+}/*o ponto "." referecia uma classe*/
+
+.campo-medio{
+	display: inline-block;
+	padding-right: .5em;
+}
+
+button{
+	padding: .5em 2em;
+	border: 0;
+	border-bottom: 3px solid;
+	font-size: 1.2em;
+	cursor: pointer;
+	margin: 0;
+	margin-top: -3px;
+	color: #fff;
+	background-color:#0c8cd3;
+	border-color: #04324c;
+	width: 20%;
+    display: block;
+    clear: both;
+    margin: 10px 0px;
+
+} /*características do botão*/
+
+button:active{
+	margin-top:0px;
+	border: 0;
+}
+
+button[disabled=disabled], button:disabled {
+    background-color: gray;
+	border-color: darkgray;
+
+}
+
+.adicionar-paciente{
+    margin-top: 30px;
+}
+
+.campo-invalido{
+	border: 1px solid red;
+}
+
+.paciente-invalido {
+	background-color: lightcoral;
+}
+
+#section-form{
+	margin-top: 50px;
+}
+
+div{
+	width: 100%;
+}
+
+div > input{
+	width: 100%;
+	padding: 10px;
+}
+
+.grupo{
+	width: 33%;
+	display: inline-block;
+	padding: 10px 0;
+}
+
+#adicionar-paciente{
+	width: 80%;
+	margin-left: 10%;
+	background: #EEE;
+	color: black;
+	font-weight: bold;
+	border: 2px solid black;
+	border-radius: 8px;
+	transition: 500ms;
+}
+
+#adicionar-paciente:hover{
+	width: 100%;
+	background: black;
+	color: white;
+	margin-left: 0%;
+}
